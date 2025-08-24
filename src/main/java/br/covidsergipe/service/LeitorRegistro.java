@@ -18,8 +18,8 @@ public class LeitorRegistro {
 
             while(scanner.hasNextLine()){
                 String linha = scanner.nextLine();
-                String[] campos = linha.split(",");
-                RegistroCovid registro = new RegistroCovid(campos[0], campos[1], Integer.parseInt(campos[2]), Integer.parseInt(campos[3]), Integer.parseInt(campos[4]), Integer.parseInt(campos[5]), Integer.parseInt(campos[6]), Integer.parseInt(campos[7]));
+                String[] campos = linha.split(";");
+                RegistroCovid registro = new RegistroCovid(campos[0], campos[1], campos[2], campos[3], Integer.parseInt(campos[4]), Integer.parseInt(campos[5]), campos[6], Integer.parseInt(campos[7]), Integer.parseInt(campos[8]), Double.parseDouble(campos[9]), Double.parseDouble(campos[10]));
                 registros.add(registro);
 
             }
