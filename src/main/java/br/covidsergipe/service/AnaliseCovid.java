@@ -180,4 +180,7 @@ public class AnaliseCovid {
         return mortalidade;
     }
 
+    public List<RegistroCovid> getRegistros(){
+        return registros;
+    }
 }
